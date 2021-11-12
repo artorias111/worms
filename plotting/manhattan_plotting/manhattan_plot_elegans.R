@@ -14,16 +14,16 @@ library("cowplot")
 trait_name <- ""
 
 #load gene list file for labelling
-genes <- read.delim("/Users/shriram/Desktop/worm/plots/plotting/genes/eleg_genes.tsv")
+genes <- read.delim("/Users/shriram/Desktop/worms/plotting/genes/eleg_genes.tsv")
 
 # load independent tests result
-total_independent_tests <- read.table("/Users/shriram/Desktop/worm/results/nemascan_results/elegans/first_run/Analysis_Results-20210910/Genotype_Matrix/total_independent_tests.txt", quote="\"", comment.char="", stringsAsFactors=FALSE)
+total_independent_tests <- read.table("/Users/shriram/Desktop/worms/results/nemascan_results/fine_maping/elegans/Analysis_Results-20211110/Genotype_Matrix/total_independent_tests.txt", quote="\"", comment.char="", stringsAsFactors=FALSE)
 
 independent_test_cutoff <- -log10(0.05/total_independent_tests[[1]])
 
 # load processed mapping data. 
 #processed_mapping <- read.delim("/projects/b1059/projects/Shriram/worm/results/result_date/10_12/Analysis_Results-20211012/Mapping/Processed/processed_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
-processed_mapping <- read.delim("/Users/shriram/Desktop/worm/results/nemascan_results/elegans/first_run/Analysis_Results-20210910/Mapping/Processed/processed_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
+processed_mapping <- read.delim("/Users/shriram/Desktop/worms/results/nemascan_results/fine_maping/elegans/Analysis_Results-20211110/Mapping/Processed/processed_avg_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
   dplyr::mutate(CHROM = factor(CHROM, levels = c("I","II","III","IV","V","X","MtDNA"))) %>%
   dplyr::select(-marker) %>%
   tidyr::unite("marker", CHROM, POS, sep = ":", remove = F)
@@ -84,15 +84,15 @@ man.plot <-  ggplot2::ggplot() +
                                   fill="blue") +
   ggplot2::geom_hline(data = BF.frame, aes(yintercept = BF), linetype = 2) + 
   ggplot2::geom_hline(data = BF.frame, aes(yintercept = EIGEN), linetype = 3) + 
-  #ggplot2::labs(x = "Genomic position (Mb)",
-                #y = expression(-log[10](italic(p)))) +
+  ggplot2::labs(x = "",
+                y = "" ) +
   ggplot2::theme(legend.position = "none", 
                  panel.grid = element_blank()) + 
   ggplot2::facet_grid(. ~ CHROM, scales = "free_x", space = "free") 
 
 man.plot
 
-
+ggsave("eleg_plot.png",width=7.5,height=2.5,units = "in",dpi=300)
 
 
 # save the plot to file. keep this code for user to create plots with their own styles

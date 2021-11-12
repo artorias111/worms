@@ -14,20 +14,20 @@ library("cowplot")
 trait_name <- "telomere_length"
 
 # load independent tests result
-total_independent_tests <- read.table("/Users/shriram/Desktop/worm/results/result_date/10_12/Analysis_Results-20211012/Genotype_Matrix/total_independent_tests.txt", quote="\"", comment.char="", stringsAsFactors=FALSE)
+total_independent_tests <- read.table("/Users/shriram/Desktop/worms/results/nemascan_results/fine_maping/tropicalis/Analysis_Results-20211007/Genotype_Matrix/total_independent_tests.txt", quote="\"", comment.char="", stringsAsFactors=FALSE)
 
 independent_test_cutoff <- -log10(0.05/total_independent_tests[[1]])
 
 # load processed mapping data. 
-#processed_mapping <- read.delim("/projects/b1059/projects/Shriram/worm/results/result_date/10_12/Analysis_Results-20211012/Mapping/Processed/processed_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
-processed_mapping <- read.delim("/Users/shriram/Desktop/worm/results/result_date/10_12/Analysis_Results-20211012/Mapping/Processed/processed_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
+#processed_mapping <- read.delim("/projects/b1059/projects/Shriram/worm/results/result_date/10_12/Analysis_Results-20211007/Mapping/Processed/processed_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
+processed_mapping <- read.delim("/Users/shriram/Desktop/worms/results/nemascan_results/fine_maping/tropicalis/Analysis_Results-20211012/Mapping/Processed/processed_telomere_length_AGGREGATE_mapping.tsv", stringsAsFactors=FALSE) %>%
   dplyr::mutate(CHROM = factor(CHROM, levels = c("I","II","III","IV","V","X","MtDNA"))) %>%
   dplyr::select(-marker) %>%
   tidyr::unite("marker", CHROM, POS, sep = ":", remove = F)
 
 
 #load gene data
-genes <- read.delim("/Users/shriram/Desktop/worm/plots/plotting/genes.tsv")
+genes <- read.delim("/Users/shriram/Desktop/worms/plotting/genes/trop_genes.tsv")
 
 for.plot <- processed_mapping %>%
   dplyr::mutate(CHROM = as.factor(CHROM)) %>%
@@ -78,7 +78,7 @@ man.plot <-  ggplot2::ggplot() +
   ggplot2::geom_hline(data = BF.frame, aes(yintercept = BF), linetype = 2) + 
   ggplot2::geom_hline(data = BF.frame, aes(yintercept = EIGEN), linetype = 3) + 
   ggplot2::labs(x = "Genomic position (Mb)",
-                y = expression(-log[10](italic(p)))) +
+                y = "") +
   ggplot2::theme(legend.position = "none", 
                  panel.grid = element_blank()) + 
   ggplot2::facet_grid(. ~ CHROM, scales = "free_x", space = "free") 
@@ -86,6 +86,7 @@ man.plot <-  ggplot2::ggplot() +
   
 man.plot
 
+ggsave("trop_plot.png",width=7.5,height=2.5,units = "in",dpi=300)
 
 # save the plot to file. keep this code for user to create plots with their own styles
 #ggplot2::ggsave(man.plot, filename = "manplot.png", width = 8, height = 4)
