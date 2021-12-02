@@ -1,0 +1,12 @@
+2021-10-20 11:54:29 : Started OrthoFinder version 2.5.4
+Command Line: /home/bsy6241/.conda/envs/test/bin/orthofinder -f /projects/b1059/projects/Shriram/data/orthofinder/fastas -og -t 12
+
+WorkingDirectory_Base: /projects/b1059/projects/Shriram/data/orthofinder/fastas/OrthoFinder/Results_Oct20/WorkingDirectory/
+
+Species used: 
+0: brig_proteins.clean.fa
+1: eleg_proteins.clean.fa
+2: trop_proteins.clean.fa
+
+FN_Orthogroups: /projects/b1059/projects/Shriram/data/orthofinder/fastas/OrthoFinder/Results_Oct20/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+2021-10-20 12:14:47 : OrthoFinder run completed

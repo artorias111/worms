@@ -1,0 +1,3 @@
+0: brig_proteins.clean.fa
+1: eleg_proteins.clean.fa
+2: trop_proteins.clean.fa
