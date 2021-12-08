@@ -1,0 +1,11 @@
+2021-12-02 12:02:25 : Started OrthoFinder version 2.5.4
+Command Line: /home/bsy6241/.conda/envs/gffread/bin/orthofinder -f /projects/b1059/projects/Shriram/new_orthofinder/brig_quest_wormbase -og -t 12
+
+WorkingDirectory_Base: /projects/b1059/projects/Shriram/new_orthofinder/brig_quest_wormbase/OrthoFinder/Results_Dec02/WorkingDirectory/
+
+Species used: 
+0: quest_brigg_proteins.fa
+1: wormbase_brigg_proteins.fa
+
+FN_Orthogroups: /projects/b1059/projects/Shriram/new_orthofinder/brig_quest_wormbase/OrthoFinder/Results_Dec02/WorkingDirectory/clusters_OrthoFinder_I1.5.txt_id_pairs.txt
+2021-12-02 12:13:08 : OrthoFinder run completed

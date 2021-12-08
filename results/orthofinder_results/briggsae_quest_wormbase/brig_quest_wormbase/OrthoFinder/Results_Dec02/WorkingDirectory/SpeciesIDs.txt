@@ -1,0 +1,2 @@
+0: quest_brigg_proteins.fa
+1: wormbase_brigg_proteins.fa

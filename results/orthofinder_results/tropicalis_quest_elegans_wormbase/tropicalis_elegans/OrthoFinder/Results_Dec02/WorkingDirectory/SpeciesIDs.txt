@@ -1,0 +1,2 @@
+0: elegans_wormbase_proteins.fa
+1: tropicalis_quest_protens.fa
