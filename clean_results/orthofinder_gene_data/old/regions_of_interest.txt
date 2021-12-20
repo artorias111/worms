@@ -1,0 +1,13 @@
+
+
+Orthogroups:
+OG0009839
+in elegans: transcript_F32A7-6-1; WBGene00000088
+
+OG0002460
+in elegans: transcript_F35C11-3-1; WBGene00009402
+	, transcript_F35C11-3-2, 
+	transcript_M05D6-1-1, WBGene00010874
+	transcript_M05D6-1-2
+
+					
