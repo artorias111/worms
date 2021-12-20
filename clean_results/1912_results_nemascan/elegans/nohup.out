@@ -1,0 +1,944 @@
+N E X T F L O W  ~  version 21.04.3
+Project `andersenlab/nemascan` currently is sticked on revision: nemascan-nxf_v1.0~6^2~6 -- you need to specify explicitly a revision with the option `-r` to use it
+N E X T F L O W  ~  version 21.04.3
+Launching `andersenlab/nemascan` [trusting_shirley] - revision: f53e2a469e [nemascan-nxf_v1.0~6^2~6]
+WARN: DSL 2 PREVIEW MODE IS DEPRECATED - USE THE STABLE VERSION INSTEAD -- Read more at https://www.nextflow.io/docs/latest/dsl2.html#dsl2-migration-notes
+
+O~~~     O~~                                   O~~ ~~
+O~ O~~   O~~                                 O~~    O~~
+O~~ O~~  O~~   O~~    O~~~ O~~ O~~    O~~     O~~         O~~~   O~~    O~~ O~~
+O~~  O~~ O~~ O~   O~~  O~~  O~  O~~ O~~  O~~    O~~     O~~    O~~  O~~  O~~  O~~
+O~~   O~ O~~O~~~~~ O~~ O~~  O~  O~~O~~   O~~       O~~ O~~    O~~   O~~  O~~  O~~
+O~~    O~ ~~O~         O~~  O~  O~~O~~   O~~ O~~    O~~ O~~   O~~   O~~  O~~  O~~
+O~~      O~~  O~~~~   O~~~  O~  O~~  O~~ O~~~  O~~ ~~     O~~~  O~~ O~~~O~~~  O~~
+
+
+Trait File                              = eleg.tsv
+WARN: Access to undefined parameter `strains` -- Initialise it to a default value eg. `params.strains = some_value`
+Strain File                             = null
+Species                                 = c_elegans
+
+VCF                                     = 20210121
+Impute VCF                              = WI.20210121.impute.isotype.vcf.gz
+Annotation type                         = bcsq
+
+Significance Threshold                  = BF
+Result Directory                        = Analysis_Results-20211219
+Minor allele frequency                  = 0.05
+
+[-        ] process > fix_strain_names_bulk -
+[-        ] process > vcf_to_geno_matrix    -
+[-        ] process > chrom_eigen_variants  -
+
+[-        ] process > fix_strain_names_bulk  -
+[-        ] process > vcf_to_geno_matrix     -
+[-        ] process > chrom_eigen_variants   -
+[-        ] process > collect_eigen_variants -
+[-        ] process > prepare_gcta_files     -
+[-        ] process > gcta_grm               -
+[-        ] process > gcta_lmm_exact_mapping -
+[-        ] process > gcta_intervals_maps    -
+[-        ] process > generate_plots         -
+[-        ] process > LD_between_regions     -
+
+[-        ] process > fix_strain_names_bulk   -
+[-        ] process > vcf_to_geno_matrix      -
+[-        ] process > chrom_eigen_variants    -
+[-        ] process > collect_eigen_variants  -
+[-        ] process > prepare_gcta_files      -
+[-        ] process > gcta_grm                -
+[-        ] process > gcta_lmm_exact_mapping  -
+[-        ] process > gcta_intervals_maps     -
+[-        ] process > generate_plots          -
+[-        ] process > LD_between_regions      -
+[-        ] process > prep_ld_files           -
+[-        ] process > gcta_fine_maps          -
+[-        ] process > divergent_and_haplotype -
+[-        ] process > html_report_main        -
+
+[-        ] process > fix_strain_names_bulk   [  0%] 0 of 1
+[-        ] process > vcf_to_geno_matrix      -
+[-        ] process > chrom_eigen_variants    -
+[-        ] process > collect_eigen_variants  -
+[-        ] process > prepare_gcta_files      -
+[-        ] process > gcta_grm                -
+[-        ] process > gcta_lmm_exact_mapping  -
+[-        ] process > gcta_intervals_maps     -
+[-        ] process > generate_plots          -
+[-        ] process > LD_between_regions      -
+[-        ] process > prep_ld_files           -
+[-        ] process > gcta_fine_maps          -
+[-        ] process > divergent_and_haplotype -
+[-        ] process > html_report_main        -
+
+executor >  slurm (1)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [  0%] 0 of 1
+[-        ] process > vcf_to_geno_matrix                 -
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[-        ] process > prepare_gcta_files                 -
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (1)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [  0%] 0 of 1
+[-        ] process > vcf_to_geno_matrix                 -
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[-        ] process > prepare_gcta_files                 -
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (1)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[-        ] process > vcf_to_geno_matrix                 -
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[-        ] process > prepare_gcta_files                 -
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (1)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[-        ] process > vcf_to_geno_matrix                 -
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (2)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[-        ] process > vcf_to_geno_matrix                 -
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (2)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[-        ] process > vcf_to_geno_matrix                 -
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (3)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [  0%] 0 of 1
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (3)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [  0%] 0 of 1
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (3)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[-        ] process > chrom_eigen_variants               -
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (4)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[f0/f0f5fb] process > chrom_eigen_variants (I)           [  0%] 0 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (7)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[d9/3447fc] process > chrom_eigen_variants (II)          [  0%] 0 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[e3/bfa6e0] process > chrom_eigen_variants (X)           [  0%] 0 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[e3/bfa6e0] process > chrom_eigen_variants (X)           [  0%] 0 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[e3/bfa6e0] process > chrom_eigen_variants (X)           [  0%] 0 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[e3/bfa6e0] process > chrom_eigen_variants (X)           [  0%] 0 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[e3/bfa6e0] process > chrom_eigen_variants (X)           [ 17%] 1 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[f0/f0f5fb] process > chrom_eigen_variants (I)           [ 33%] 2 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[d9/3447fc] process > chrom_eigen_variants (II)          [ 83%] 5 of 6
+[-        ] process > collect_eigen_variants             -
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (9)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[-        ] process > collect_eigen_variants             [  0%] 0 of 1
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (10)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [  0%] 0 of 1
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (10)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [  0%] 0 of 1
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (10)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[-        ] process > gcta_grm                           -
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (10)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[-        ] process > gcta_grm                           [  0%] 0 of 1
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (11)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [  0%] 0 of 1
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (11)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [  0%] 0 of 1
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (11)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[-        ] process > gcta_lmm_exact_mapping             -
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (12)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [  0%] 0 of 1
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (12)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [  0%] 0 of 1
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (12)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[-        ] process > gcta_intervals_maps                -
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (13)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [  0%] 0 of 1
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (13)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [  0%] 0 of 1
+[-        ] process > generate_plots                     -
+[-        ] process > LD_between_regions                 -
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (13)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[-        ] process > generate_plots                     [  0%] 0 of 1
+[-        ] process > LD_between_regions                 [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (15)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            -
+[-        ] process > html_report_main                   -
+
+executor >  slurm (15)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[-        ] process > divergent_and_haplotype            [  0%] 0 of 1
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [  0%] 0 of 1
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [  0%] 0 of 1
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [  0%] 0 of 1
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [  0%] 0 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [  0%] 0 of 1
+[-        ] process > prep_ld_files                      -
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (16)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[-        ] process > prep_ld_files                      [  0%] 0 of 1
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (17)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)             [  0%] 0 of 1
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (17)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)             [  0%] 0 of 1
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (17)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)             [100%] 1 of 1 ✔
+[-        ] process > gcta_fine_maps                     -
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (18)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)             [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                 [  0%] 0 of 1
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (18)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)             [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                 [  0%] 0 of 1
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (18)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT) [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)             [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)         [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants             [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)             [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                       [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)         [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)            [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                 [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)             [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)             [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                 [100%] 1 of 1 ✔
+[8f/67b2f1] process > divergent_and_haplotype (1)        [100%] 1 of 1 ✔
+[-        ] process > html_report_main                   -
+
+executor >  slurm (19)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT)      [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)                  [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)              [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants                  [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)                  [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                            [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)              [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)                 [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                      [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)                  [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)                  [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                      [100%] 1 of 1 ✔
+[8f/67b2f1] process > divergent_and_haplotype (1)             [100%] 1 of 1 ✔
+[fb/f748c2] process > html_report_main (length - HTML REPORT) [  0%] 0 of 1
+
+executor >  slurm (19)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT)      [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)                  [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)              [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants                  [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)                  [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                            [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)              [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)                 [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                      [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)                  [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)                  [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                      [100%] 1 of 1 ✔
+[8f/67b2f1] process > divergent_and_haplotype (1)             [100%] 1 of 1 ✔
+[fb/f748c2] process > html_report_main (length - HTML REPORT) [  0%] 0 of 1
+
+executor >  slurm (19)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT)      [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)                  [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)              [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants                  [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)                  [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                            [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)              [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)                 [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                      [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)                  [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)                  [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                      [100%] 1 of 1 ✔
+[8f/67b2f1] process > divergent_and_haplotype (1)             [100%] 1 of 1 ✔
+[fb/f748c2] process > html_report_main (length - HTML REPORT) [100%] 1 of 1 ✔
+
+    Pipeline execution summary
+    ---------------------------
+    Completed at: 2021-12-19T08:57:20.659387-06:00
+    Duration    : 38m 35s
+    Success     : true
+    workDir     : /projects/b1042/AndersenLab/work/shriram
+    exit status : 0
+    Error report: -
+    Git info: https://github.com/andersenlab/nemascan - nemascan-nxf_v1.0~6^2~6 [f53e2a469ec9d2d9cca77613bf9f36efd60caa8a]
+    { Parameters }
+    ---------------------------
+    Phenotype File                          = eleg.tsv
+    VCF                                     = 20210121
+    Significance Threshold                  = BF
+    P3D                                     = TRUE
+    Threshold for grouping QTL              = 1000
+    Number of SNVs to define CI             = 150
+    Path to R libraries.                    = /projects/b1059/software/R_lib_3.6.0
+    Mapping                                 = RUN
+    Simulation                              = null
+    Simulate QTL effects                    = null
+    Annotation                              = null
+    Result Directory                        = Analysis_Results-20211219
+    
+
+executor >  slurm (19)
+[64/76acf0] process > fix_strain_names_bulk (BULK TRAIT)      [100%] 1 of 1 ✔
+[5f/6ce81f] process > vcf_to_geno_matrix (1)                  [100%] 1 of 1 ✔
+[db/fd67b4] process > chrom_eigen_variants (III)              [100%] 6 of 6 ✔
+[2f/682dac] process > collect_eigen_variants                  [100%] 1 of 1 ✔
+[b0/dee099] process > prepare_gcta_files (1)                  [100%] 1 of 1 ✔
+[54/d2a1fc] process > gcta_grm (1)                            [100%] 1 of 1 ✔
+[00/3213e1] process > gcta_lmm_exact_mapping (1)              [100%] 1 of 1 ✔
+[99/73cb0a] process > gcta_intervals_maps (1)                 [100%] 1 of 1 ✔
+[61/a7d563] process > generate_plots (1)                      [100%] 1 of 1 ✔
+[45/1c17e5] process > LD_between_regions (1)                  [100%] 1 of 1 ✔
+[b6/85f468] process > prep_ld_files (length)                  [100%] 1 of 1 ✔
+[05/09c8f5] process > gcta_fine_maps (1)                      [100%] 1 of 1 ✔
+[8f/67b2f1] process > divergent_and_haplotype (1)             [100%] 1 of 1 ✔
+[fb/f748c2] process > html_report_main (length - HTML REPORT) [100%] 1 of 1 ✔
+
+    Pipeline execution summary
+    ---------------------------
+    Completed at: 2021-12-19T08:57:20.659387-06:00
+    Duration    : 38m 35s
+    Success     : true
+    workDir     : /projects/b1042/AndersenLab/work/shriram
+    exit status : 0
+    Error report: -
+    Git info: https://github.com/andersenlab/nemascan - nemascan-nxf_v1.0~6^2~6 [f53e2a469ec9d2d9cca77613bf9f36efd60caa8a]
+    { Parameters }
+    ---------------------------
+    Phenotype File                          = eleg.tsv
+    VCF                                     = 20210121
+    Significance Threshold                  = BF
+    P3D                                     = TRUE
+    Threshold for grouping QTL              = 1000
+    Number of SNVs to define CI             = 150
+    Path to R libraries.                    = /projects/b1059/software/R_lib_3.6.0
+    Mapping                                 = RUN
+    Simulation                              = null
+    Simulate QTL effects                    = null
+    Annotation                              = null
+    Result Directory                        = Analysis_Results-20211219
+    
+Completed at: 19-Dec-2021 08:57:22
+Duration    : 38m 36s
+CPU hours   : 4.5
+Succeeded   : 19
+
+
